@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ## git几个知识点
 变更工作区------git checkout   
 变更暂存区------git reset
@@ -8,22 +8,15 @@ git mv readme readme.rd  //git重命名文件
 ```
 
 ## git 配置
+
 ```
-git config --global/local/system user.name/email
-=======
-##Shell Git
-###1. Git配置   
-```
-git config --global/local/system user.name/email
-```
-```
->>>>>>> 822930e7032a0936d4750eca2181079246518872
---global  //对所有仓库有效
---local   //仅对当前仓库有效
+git config --global/local/system user.name/email   
+--global  //对所有仓库有效   
+--local   //仅对当前仓库有效  
 --system  //对所有登录用户有效
+
 ```
 
-<<<<<<< HEAD
 ## .git folder
 下图为.git文件夹中比较重要的文件夹和文件的结构和意义：
 ![.git folder](./.git folder.png)
@@ -87,15 +80,6 @@ squash/s，并删除刚刚复制的原commi记录，保存退出后会跳转到�
 
 
 ## git log
-=======
-###2. git常用命令
-
-```
-git mv readme readme.rd  //git重命名文件
-```
-
-###3. Git log使用
->>>>>>> 822930e7032a0936d4750eca2181079246518872
 
 最简单的看log的命令：git log   
 
@@ -109,7 +93,6 @@ git mv readme readme.rd  //git重命名文件
 ```
 以上几个参数可以同时使用！！
 
-<<<<<<< HEAD
 ## git diff
 ###1. 查看暂存区和HEAD的差异
 ```
@@ -133,9 +116,6 @@ git checkout 'branch_name'	//切换分支
 git checkout -b 'branch_name'    //新建本地分支
 git branch -d/-D 'branch_name' 	//删除本地分支，-d报错，-D强制删除
 ```
-## GUI git
-=======
 ##GUI Git
-##图形界面
->>>>>>> 822930e7032a0936d4750eca2181079246518872
+
 命令行输入：gitk
