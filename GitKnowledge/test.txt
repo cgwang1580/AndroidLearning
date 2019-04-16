@@ -1,1 +1,6 @@
 this is a file to test git operation.
+
+test for reset
+
+
+test2
