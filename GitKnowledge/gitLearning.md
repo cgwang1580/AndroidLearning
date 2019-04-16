@@ -122,6 +122,18 @@ git diff 'branch1' 'branch2' -- 'file'	//查看两个分支file文件的差异
 git diff 'branch1_commit' 'branch2_commit' -- 'file'	//查看两个/同一个分支的commit间的差异
 ```
 
+## git stash
+场景：开发过程中，工作区有修改，临时有新任务需要处理，需要将工作区的改动保存，等任务处理完之后在进行先前的开发工作
+
+```
+git stash	//将工作区的改动先保存起来，清空工作区
+git stash list	//查看保存堆栈的信息
+git stash apply	（stash_id）//将保存在stash堆栈的改动返回到工作区，stash中的保存记录还在,多条stash记录的话需要加id
+git stash pop	//将保存在stash堆栈最顶层的改动返回到工作区,stash中的保存记录删除
+git stash drop stash@{0}	//删除stash第一个记录
+git stash clear		//清空stash所有记录
+```
+
 ## git branch
 
 ```
