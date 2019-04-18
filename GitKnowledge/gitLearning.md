@@ -22,7 +22,7 @@ git config --global/local/system user.name/email
 下图为.git文件夹中比较重要的文件夹和文件的结构和意义：
 ![.git folder](./.git_folder.png)
 
-##git HEAD
+## git HEAD
 ### 1. git HEAD
 HEAD指针可以指向一个分支，也可以指向commit，指向commit时为分离头指针状态；
 几个和HEAD相关的git命令：
