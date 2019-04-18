@@ -20,7 +20,7 @@ git config --global/local/system user.name/email
 
 ## .git folder
 下图为.git文件夹中比较重要的文件夹和文件的结构和意义：
-![.git folder](./.git folder.png)
+![.git folder](./.git_folder.png)
 
 ##git HEAD
 ### 1. git HEAD
@@ -126,7 +126,7 @@ git diff 'branch1_commit' 'branch2_commit' -- 'file'	//查看两个/同一个分
 场景：开发过程中，工作区有修改，临时有新任务需要处理，需要将工作区的改动保存，等任务处理完之后在进行先前的开发工作
 
 ```
-git stash	//将工作区的改动先保存起来，清空工作区
+git stash	//将工作区和暂存区的改动先保存起来，清空工作区
 git stash list	//查看保存堆栈的信息
 git stash apply	（stash_id）//将保存在stash堆栈的改动返回到工作区，stash中的保存记录还在,多条stash记录的话需要加id
 git stash pop	//将保存在stash堆栈最顶层的改动返回到工作区,stash中的保存记录删除
@@ -142,6 +142,43 @@ git checkout 'branch_name'	//切换分支
 git checkout -b 'branch_name'    //新建本地分支
 git branch -d/-D 'branch_name' 	//删除本地分支，-d报错，-D强制删除
 ```
+## .gitignore file
+
+```
+*.idea	//.idea后缀的文件和.idea文件夹及下面的文件都不会被add
+*.idea	//.idea文件夹下的文件都不会被add
+```
+
 ## GUI Git
 
-命令行输入：gitk
+```
+gitk
+```
+
+## git仓库备份
+
+### 1. 常用传输协议
+![.git folder](./transfer_protocol.png)
+>
+哑协议传输进度不可见，智能协议进度可见；  
+智能协议传输速度快；
+>
+
+```
+git clone --bare 'path/.git' 'backup.git'	//备份本地仓库，--bare不带工作区的clone，用于本地backup
+```
+
+```
+git remote -v	//查看远端仓库
+git remote add 'remote_repo_.git'	//添加远端仓库
+
+sample：
+git remote add 'name' /d/Work/Learning/AndroidLearning/backtest/zhineng.git	//使用哑协议添加远程仓库
+git remote add 'name' file:///d/Work/Learning/AndroidLearning/backtest/zhineng.git	//使用智能协议添加远程仓库
+
+'d/Work/Learning/AndroidLearning/backtest/zhineng.git'是备份的裸仓库， name为命名远端仓库名称
+
+```
+>
+添加远端仓库，既可以是github这样的远端，也可以是本地backup的仓库作为远端
+>

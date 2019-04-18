@@ -4,3 +4,5 @@ test for reset
 
 
 test2
+
+test for git stash
