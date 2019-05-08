@@ -20,7 +20,7 @@ git config --global/local/system user.name/email
 
 ## .git folder
 下图为.git文件夹中比较重要的文件夹和文件的结构和意义：
-![.git folder](./.git_folder.png)
+![.git folder](./resource/.git_folder.png)
 
 ## git HEAD
 ### 1. git HEAD
@@ -158,7 +158,7 @@ gitk
 ## git仓库备份
 
 ### 1. 常用传输协议
-![.git folder](./transfer_protocol.png)
+![.git folder](./resource/transfer_protocol.png)
 >
 哑协议传输进度不可见，智能协议进度可见；  
 智能协议传输速度快；
@@ -182,3 +182,5 @@ git remote add 'name' file:///d/Work/Learning/AndroidLearning/backtest/zhineng.g
 >
 添加远端仓库，既可以是github这样的远端，也可以是本地backup的仓库作为远端
 >
+
+## git remote
