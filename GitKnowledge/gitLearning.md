@@ -48,6 +48,13 @@ git reset HEAD -- 'file1' 'file2'	//file1 2为add到暂存区的文件
 ```
 git checkout -- 'file'	//file为add到暂存区的文件
 ```
+### 4.清空工作区
+
+```
+git checkout .
+```
+
+
 
 ## git commit
 ### 1. 提交
