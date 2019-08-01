@@ -18,7 +18,7 @@ libcurl如果需要使用SSL功能，需要提供编译好的SSL的库。因此�
 | 操作系统           | Win10       |                                                              |
 | Visual Studio 2015 | V14.0       |                                                              |
 | OpenSSL            | -1.1.1-pre7 | [download](https://www.openssl.org/source/openssl-1.1.1-pre7.tar.gz) |
-| perl               | v5.28.1     | [perl](https://www.activestate.com/products/activeperl/downloads/thank-you/?dl=http://downloads.activestate.com/ActivePerl/releases) |
+| perl               | v5.28.1     | [download](https://www.activestate.com/products/activeperl/downloads/thank-you/?dl=http://downloads.activestate.com/ActivePerl/releases) |
 | libcurl            | curl-7.60.0 | [download](https://curl.haxx.se/download/curl-7.60.0.tar.gz) |
 | nasm               | v2.13.01    | [download](http://www.nasm.us/pub/nasm/releasebuilds/2.13.01/win64/nasm-2.13.01-installer-x64.exe) |
 
