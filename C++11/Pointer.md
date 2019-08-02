@@ -1,10 +1,10 @@
-[TOC]
-
-[shared_ptr](C++11 智能指针)
-
-​	[shared_ptr初始化](shared_ptr初始化)
-
-​	[shared_ptr 管理动态数组](shared_ptr 管理动态数组)
+* [C\+\+11 智能指针](#c11-%E6%99%BA%E8%83%BD%E6%8C%87%E9%92%88)
+  * [shared\_ptr](#shared_ptr)
+    * [shared\_ptr初始化](#shared_ptr%E5%88%9D%E5%A7%8B%E5%8C%96)
+    * [shared\_ptr 管理动态数组](#shared_ptr-%E7%AE%A1%E7%90%86%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84)
+  * [unique\_ptr](#unique_ptr)
+  * [weak\_ptr](#weak_ptr)
+  * [参考](#%E5%8F%82%E8%80%83)
 
 ## C++11 智能指针
 
