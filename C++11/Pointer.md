@@ -1,5 +1,11 @@
 [TOC]
 
+[shared_ptr](C++11 智能指针)
+
+​	[shared_ptr初始化](shared_ptr初始化)
+
+​	[shared_ptr 管理动态数组](shared_ptr 管理动态数组)
+
 ## C++11 智能指针
 
 ### shared_ptr
