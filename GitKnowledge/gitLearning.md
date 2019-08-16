@@ -196,6 +196,7 @@ git remote add 'name' file:///d/Work/Learning/AndroidLearning/backtest/zhineng.g
 ```shell
 git branch -r 
 git branch -d [name]  #d选项只能删除已经参与了合并的分支，对于未有合并的分支是无法删除的。如果想强制删除一个分支，可以使用-D选项
-
+git push origin test:master    #提交本地test分支作为远程的master分支 //好像只写这一句，远程的github就会自动创建一个test分支
+git push origin test:test      #提交本地test分支作为远程的test分支
 ```
 
