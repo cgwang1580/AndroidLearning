@@ -1,4 +1,9 @@
-[TOC]
+[<strong>常用命令</strong>](#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4)
+
+* [<strong>set\_target\_properties &amp;&amp; get\_target\_property</strong>](#set_target_properties--get_target_property)
+* [<strong>文件操作</strong>](#%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C)
+
+
 
 [CMake手册翻译](https://www.zybuluo.com/khan-lau/note/254724)
 
