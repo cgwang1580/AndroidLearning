@@ -2,31 +2,31 @@
 * [git 配置](#git-%E9%85%8D%E7%BD%AE)
 * [\.git folder](#git-folder)
 * [git HEAD](#git-head)
-  * [1\. git HEAD](#1-git-head)
-  * [2\. 恢复暂存区为HEAD状态](#2-%E6%81%A2%E5%A4%8D%E6%9A%82%E5%AD%98%E5%8C%BA%E4%B8%BAhead%E7%8A%B6%E6%80%81)
-  * [3\. 恢复工作区为暂存区状态](#3-%E6%81%A2%E5%A4%8D%E5%B7%A5%E4%BD%9C%E5%8C%BA%E4%B8%BA%E6%9A%82%E5%AD%98%E5%8C%BA%E7
-%8A%B6%E6%80%81)
-  * [4\.清空工作区](#4%E6%B8%85%E7%A9%BA%E5%B7%A5%E4%BD%9C%E5%8C%BA)
+  * [1 git HEAD](#1-git-head)
+  * [2 恢复暂存区为HEAD状态](#2-%E6%81%A2%E5%A4%8D%E6%9A%82%E5%AD%98%E5%8C%BA%E4%B8%BAhead%E7%8A%B6%E6%80%81)
+  * [3 恢复工作区为暂存区状态](#3-%E6%81%A2%E5%A4%8D%E5%B7%A5%E4%BD%9C%E5%8C%BA%E4%B8%BA%E6%9A%82%E5%AD%98%E5%8C%BA%E7%8
+A%B6%E6%80%81)
+  * [4 清空工作区](#4-%E6%B8%85%E7%A9%BA%E5%B7%A5%E4%BD%9C%E5%8C%BA)
 * [git commit](#git-commit)
-  * [1\. 提交](#1-%E6%8F%90%E4%BA%A4)
-  * [2\. 修改上次/某次commit的message](#2-%E4%BF%AE%E6%94%B9%E4%B8%8A%E6%AC%A1%E6%9F%90%E6%AC%A1commit%E7%9A%84message)
-  * [3\. 合并连续的几次commmit](#3-%E5%90%88%E5%B9%B6%E8%BF%9E%E7%BB%AD%E7%9A%84%E5%87%A0%E6%AC%A1commmit)
-  * [4\. 合并不连续的几次commit](#4-%E5%90%88%E5%B9%B6%E4%B8%8D%E8%BF%9E%E7%BB%AD%E7%9A%84%E5%87%A0%E6%AC%A1commit)
-  * [5\. 消除最近几次commit](#5-%E6%B6%88%E9%99%A4%E6%9C%80%E8%BF%91%E5%87%A0%E6%AC%A1commit)
+  * [1 提交](#1-%E6%8F%90%E4%BA%A4)
+  * [2 修改上次/某次commit的message](#2-%E4%BF%AE%E6%94%B9%E4%B8%8A%E6%AC%A1%E6%9F%90%E6%AC%A1commit%E7%9A%84message)
+  * [3 合并连续的几次commmit](#3-%E5%90%88%E5%B9%B6%E8%BF%9E%E7%BB%AD%E7%9A%84%E5%87%A0%E6%AC%A1commmit)
+  * [4 合并不连续的几次commit](#4-%E5%90%88%E5%B9%B6%E4%B8%8D%E8%BF%9E%E7%BB%AD%E7%9A%84%E5%87%A0%E6%AC%A1commit)
+  * [5 消除最近几次commit](#5-%E6%B6%88%E9%99%A4%E6%9C%80%E8%BF%91%E5%87%A0%E6%AC%A1commit)
 * [git log](#git-log)
 * [git diff](#git-diff)
-  * [1\. 查看暂存区和HEAD的差异](#1-%E6%9F%A5%E7%9C%8B%E6%9A%82%E5%AD%98%E5%8C%BA%E5%92%8Chead%E7%9A%84%E5%B7%AE%E5%BC%8
-2)
-  * [2\. 查看暂存区和工作区的差异](#2-%E6%9F%A5%E7%9C%8B%E6%9A%82%E5%AD%98%E5%8C%BA%E5%92%8C%E5%B7%A5%E4%BD%9C%E5%8C%BA%
+  * [1 查看暂存区和HEAD的差异](#1-%E6%9F%A5%E7%9C%8B%E6%9A%82%E5%AD%98%E5%8C%BA%E5%92%8Chead%E7%9A%84%E5%B7%AE%E5%BC%82)
+
+  * [2 查看暂存区和工作区的差异](#2-%E6%9F%A5%E7%9C%8B%E6%9A%82%E5%AD%98%E5%8C%BA%E5%92%8C%E5%B7%A5%E4%BD%9C%E5%8C%BA%E7
+%9A%84%E5%B7%AE%E5%BC%82)
+  * [3 查看两个分支/commit之间的差异](#3-%E6%9F%A5%E7%9C%8B%E4%B8%A4%E4%B8%AA%E5%88%86%E6%94%AFcommit%E4%B9%8B%E9%97%B4%
 E7%9A%84%E5%B7%AE%E5%BC%82)
-  * [3\. 查看两个分支/commit之间的差异](#3-%E6%9F%A5%E7%9C%8B%E4%B8%A4%E4%B8%AA%E5%88%86%E6%94%AFcommit%E4%B9%8B%E9%97%B
-4%E7%9A%84%E5%B7%AE%E5%BC%82)
 * [git stash](#git-stash)
 * [git branch](#git-branch)
 * [\.gitignore file](#gitignore-file)
 * [GUI Git](#gui-git)
 * [git仓库备份](#git%E4%BB%93%E5%BA%93%E5%A4%87%E4%BB%BD)
-  * [1\. 常用传输协议](#1-%E5%B8%B8%E7%94%A8%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE)
+  * [1 常用传输协议](#1-%E5%B8%B8%E7%94%A8%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE)
 * [git remote](#git-remote)
 * [git branch](#git-branch-1)
 
@@ -55,7 +55,7 @@ git config --global/local/system user.name/email
 ![.git folder](./resource/.git_folder.png)
 
 ## git HEAD
-### 1. git HEAD
+### 1 git HEAD
 HEAD指针可以指向一个分支，也可以指向commit，指向commit时为分离头指针状态；
 几个和HEAD相关的git命令：
 
@@ -66,7 +66,7 @@ git diff HEAD HEAD~1  (HEAD~2)
 ```
 HEAD^为HEAD的上一次commit
 
-### 2. 恢复暂存区为HEAD状态
+### 2 恢复暂存区为HEAD状态
 需求场景：再将文件add到暂存区之后不想提交暂存区的内容
 
 ```shell
@@ -74,13 +74,13 @@ git reset HEAD						#这个操作之后，暂存区的所有变更会去除
 git reset HEAD -- 'file1' 'file2'	#file1 2为add到暂存区的文件
 ```
 
-### 3. 恢复工作区为暂存区状态
+### 3 恢复工作区为暂存区状态
 需求场景：add文件到暂存区之后，工作区继续开发，发现工作区的变更不如暂存区，需要恢复暂存区的某些文件到工作区
 
 ```shell
 git checkout -- 'file'				#file为add到暂存区的文件
 ```
-### 4.清空工作区
+### 4 清空工作区
 
 ```shell
 git checkout .
@@ -89,21 +89,21 @@ git checkout .
 
 
 ## git commit
-### 1. 提交
+### 1 提交
 ```shell
 git commit -m 'message'				#提交修改
 ```
-### 2. 修改上次/某次commit的message 
+### 2 修改上次/某次commit的message 
 ```shell
 git commit --amend					#修改最近一次提交的message
 git rebase -i 'commit_id'			#修改某次commit的message，commit_id应该为需要修改的commit的上一级commit，之后会进入选择操作，改第一行为 reword/r,保存退出，然后会自动进入修改message的界面，修改message，保存退出即可
 ```
-### 3. 合并连续的几次commmit
+### 3 合并连续的几次commmit
 ```shell
 git rebase -i 'commit_id'	
 #commit_id为需要合并的几次commit中最靠前的commit的上一个，进入选择操作交互，第一个选pick，最后一个也是pick，中间几次需要合并的选择 squash/s，然后保存退出，然后会跳转到合并提交commit的页面，添加合并log即可
 ```
-### 4. 合并不连续的几次commit
+### 4 合并不连续的几次commit
 ```shell
 git rebase -i 'commit_id'	
 #commit_id为需要合并的几次commit中最靠前的commit的上一个，进入选择操作交互后，第一个选pick，将需要合并的commit copy到将要合并到的commit的下面，改变状态为squash/s，并删除刚刚复制的原commi记录，保存退出后会跳转到合并提交commit的页面，添加合并log即可。
@@ -112,10 +112,8 @@ git rebase -i 'commit_id'
 >注：   
 >
 >1. 若需要合并到的commit已经为根commit，则选择该commit作为rebase -i的commit_id，进入state修改界面之后,先将最老的commmit拷到顶部，然后同上述操作...   
-2. 多个commit合并只能将新的commmit合并到老的commmit。
->
-
-### 5. 消除最近几次commit
+>2. 多个commit合并只能将新的commmit合并到老的commmit。
+### 5 消除最近几次commit
 
 ```shell
 git reset --hard 'commmit_id'	
@@ -137,12 +135,12 @@ git reset --hard 'commmit_id'
 以上几个参数可以同时使用！！
 
 ## git diff
-### 1. 查看暂存区和HEAD的差异
+### 1 查看暂存区和HEAD的差异
 ```shell
 git diff add 'file'
 git diff --cached
 ```
-### 2. 查看暂存区和工作区的差异
+### 2 查看暂存区和工作区的差异
 ```shell
 git diff add 'file'
 git diff 
@@ -151,7 +149,7 @@ git diff
 注：git add之后，再修改工作区，则git diff命令查看的是工作区和暂存区的差异。
 >
 
-### 3. 查看两个分支/commit之间的差异
+### 3 查看两个分支/commit之间的差异
 
 ```shell
 git diff 'branch1' 'branch2' 			#查看两个分支最新commit间的差异，会列出所有文件的差异
@@ -194,7 +192,7 @@ gitk
 
 ## git仓库备份
 
-### 1. 常用传输协议
+### 1 常用传输协议
 ![.git folder](./resource/transfer_protocol.png)
 >
 哑协议传输进度不可见，智能协议进度可见；  
