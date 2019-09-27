@@ -1,6 +1,3 @@
-Table of Contents
-=================
-
 * [git几个知识点](#git%E5%87%A0%E4%B8%AA%E7%9F%A5%E8%AF%86%E7%82%B9)
 * [git 配置](#git-%E9%85%8D%E7%BD%AE)
 * [\.git folder](#git-folder)
@@ -32,7 +29,6 @@ E7%9A%84%E5%B7%AE%E5%BC%82)
   * [1\. 常用传输协议](#1-%E5%B8%B8%E7%94%A8%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE)
 * [git remote](#git-remote)
 * [git branch](#git-branch-1)
-* 
 
 ## git几个知识点
 
