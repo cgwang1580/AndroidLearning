@@ -1,5 +1,41 @@
+Table of Contents
+=================
+
+* [git几个知识点](#git%E5%87%A0%E4%B8%AA%E7%9F%A5%E8%AF%86%E7%82%B9)
+* [git 配置](#git-%E9%85%8D%E7%BD%AE)
+* [\.git folder](#git-folder)
+* [git HEAD](#git-head)
+  * [1\. git HEAD](#1-git-head)
+  * [2\. 恢复暂存区为HEAD状态](#2-%E6%81%A2%E5%A4%8D%E6%9A%82%E5%AD%98%E5%8C%BA%E4%B8%BAhead%E7%8A%B6%E6%80%81)
+  * [3\. 恢复工作区为暂存区状态](#3-%E6%81%A2%E5%A4%8D%E5%B7%A5%E4%BD%9C%E5%8C%BA%E4%B8%BA%E6%9A%82%E5%AD%98%E5%8C%BA%E7
+%8A%B6%E6%80%81)
+  * [4\.清空工作区](#4%E6%B8%85%E7%A9%BA%E5%B7%A5%E4%BD%9C%E5%8C%BA)
+* [git commit](#git-commit)
+  * [1\. 提交](#1-%E6%8F%90%E4%BA%A4)
+  * [2\. 修改上次/某次commit的message](#2-%E4%BF%AE%E6%94%B9%E4%B8%8A%E6%AC%A1%E6%9F%90%E6%AC%A1commit%E7%9A%84message)
+  * [3\. 合并连续的几次commmit](#3-%E5%90%88%E5%B9%B6%E8%BF%9E%E7%BB%AD%E7%9A%84%E5%87%A0%E6%AC%A1commmit)
+  * [4\. 合并不连续的几次commit](#4-%E5%90%88%E5%B9%B6%E4%B8%8D%E8%BF%9E%E7%BB%AD%E7%9A%84%E5%87%A0%E6%AC%A1commit)
+  * [5\. 消除最近几次commit](#5-%E6%B6%88%E9%99%A4%E6%9C%80%E8%BF%91%E5%87%A0%E6%AC%A1commit)
+* [git log](#git-log)
+* [git diff](#git-diff)
+  * [1\. 查看暂存区和HEAD的差异](#1-%E6%9F%A5%E7%9C%8B%E6%9A%82%E5%AD%98%E5%8C%BA%E5%92%8Chead%E7%9A%84%E5%B7%AE%E5%BC%8
+2)
+  * [2\. 查看暂存区和工作区的差异](#2-%E6%9F%A5%E7%9C%8B%E6%9A%82%E5%AD%98%E5%8C%BA%E5%92%8C%E5%B7%A5%E4%BD%9C%E5%8C%BA%
+E7%9A%84%E5%B7%AE%E5%BC%82)
+  * [3\. 查看两个分支/commit之间的差异](#3-%E6%9F%A5%E7%9C%8B%E4%B8%A4%E4%B8%AA%E5%88%86%E6%94%AFcommit%E4%B9%8B%E9%97%B
+4%E7%9A%84%E5%B7%AE%E5%BC%82)
+* [git stash](#git-stash)
+* [git branch](#git-branch)
+* [\.gitignore file](#gitignore-file)
+* [GUI Git](#gui-git)
+* [git仓库备份](#git%E4%BB%93%E5%BA%93%E5%A4%87%E4%BB%BD)
+  * [1\. 常用传输协议](#1-%E5%B8%B8%E7%94%A8%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE)
+* [git remote](#git-remote)
+* [git branch](#git-branch-1)
+* 
 
 ## git几个知识点
+
 变更工作区------git checkout   
 变更暂存区------git reset
 
