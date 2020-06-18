@@ -71,7 +71,7 @@ git rebase -i 'commit_id'			#修改某次commit的message，commit_id应该为�
 ### 3 合并连续的几次commmit
 ```shell
 git rebase -i 'commit_id'	
-#commit_id为需要合并的几次commit中最靠前的commit的上一个，进入选择操作交互，第一个选pick，最后一个也是pick，中间几次需要合并的选择 squash/s，然后保存退出，然后会跳转到合并提交commit的页面，添加合并log即可
+# commit_id为需要合并的几次commit中最靠前的commit的上一个，-i 表示进入选择操作交互，之后第一个选pick，后面几次需要合并的选择 squash/s，即将这几次合并到第一次，然后保存退出，之后会跳转到合并提交commit的页面，添加合并log即可
 ```
 ### 4 合并不连续的几次commit
 ```shell
