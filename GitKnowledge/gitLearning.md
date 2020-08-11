@@ -241,7 +241,7 @@ git remote add 'name' file:///d/Work/Learning/AndroidLearning/backtest/zhineng.g
 
 有时候，某个文件已经add到暂存区，但是这个本地文件在之后的开发中被删除了，如何恢复仓库中的该文件？
 
-> 此时直接`check out`是不行的，这个时候需要先用`reset`命令，先将删除的文件找回来，然后在`check out --[file]`
+> 此时直接`git check out`是不行的，这个时候需要先用`git reset`命令，先将删除的文件找回来，然后再`git check out --[file]`
 
 ### git clone速度太慢
 
@@ -249,7 +249,7 @@ git remote add 'name' file:///d/Work/Learning/AndroidLearning/backtest/zhineng.g
 
 首先查看本地socks5代理的本地监听端口号：**1080**
 
-![local_ss_port](resource\local_ss_port.png)
+![local_ss_port](./resource/local_ss_port.png)
 
 接着使用如下命令设置只针对Github的代理：
 
@@ -272,3 +272,5 @@ git config --global --unset https.https://github.com.proxy
 ```
 
 同样也可以`git config -l`查看是否已经清除。
+
+> 注意：LFS大文件与代理不能共存，不建议将大文件上传到Github。
